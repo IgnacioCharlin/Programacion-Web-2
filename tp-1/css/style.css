@@ -6,11 +6,14 @@
 html {
     height: 100%;
 }
+
 body{
-    background: rgb(123,176,76);
-    background: linear-gradient(180deg, rgba(123,176,76,1) 0%, rgba(76,176,80,1) 100%);
-    height: 100%;
-    background-repeat: no-repeat;
+    font-family: "helvetica neue";
+    background: url(../img/fondo.png), #2196f3;
+    background: url(../img/fondo.png),
+    -webkit-gradient(linear, right top, left top, from(#2196f3), to(#009688));
+    background: url(../img/fondo.png),
+    linear-gradient(to left,rgba(123,176,76,1) 0%, rgba(76,176,80,1));
     overflow-x: hidden;
 }
 
@@ -22,6 +25,8 @@ main{
     width: 100%;
     background-color: white;
     padding: 0.4rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 #inicio-user{
@@ -107,4 +112,19 @@ footer{
     height:30px;
     text-align: center;
     font-weight: bold;
+}
+
+/** Pagina Interna **/
+
+#interno{
+    background: grey !important;
+}
+
+#interno-materias{
+    display: flex;
+    justify-content: space-between;
+}
+
+#servicios{
+    background-color: rgb(230, 227, 227);
 }
