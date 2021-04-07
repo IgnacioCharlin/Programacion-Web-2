@@ -21,6 +21,7 @@ main{
     margin: auto;
 }
 
+
 #header{
     width: 100%;
     background-color: white;
@@ -30,22 +31,22 @@ main{
 }
 
 #inicio-user{
-    background-color: rgb(238, 238, 238);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    margin: auto;
-    margin-top: 3rem;
+    padding: 2rem;
+    background-image: url("../img/foto-portada.jpg");
+    object-fit: contain;
 }
 
 #formulario-inicio{
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
     display: flex;
     flex-direction: column;
-    width: 60%;
-    margin-top: 2rem;
     font-size: large;
     font-weight: bold;
+    width: 40%;
+    padding-top: 2rem;
+    align-items: center;
 }
 #formulario-inicio input{   
     margin-bottom: 2rem;
@@ -54,6 +55,10 @@ main{
     background-color:rgb(238, 238, 238);
     border-bottom: 1.5px solid rgb(148, 143, 143);
     margin-top: 0.4rem;
+    width: 60%;
+}
+#formulario-inicio label{   
+    width: 60%;
 }
 
 #boton{
@@ -64,6 +69,8 @@ main{
     margin-bottom: 2rem;
     color: white;
     font-weight: bold;
+    text-decoration: none;
+    text-align: center;
 }
 
 #boton:hover{
@@ -78,7 +85,7 @@ main{
     justify-content: space-around;
     text-align: center;
     margin: auto;
-
+    
 }
 #pasos-preguntas a{
     background-color: white;
@@ -88,6 +95,7 @@ main{
     box-shadow: 5px 3px 5px rgb(44, 44, 44);
     text-decoration: none;
     color: black;
+    margin-bottom: 2rem;
 }
 
 #carta h3{
@@ -101,12 +109,10 @@ main{
     transition: 0.4s;
 }
 footer{
-    margin-top: 1rem;
     color: white;
     background-color: black;
     width: 100%;
     padding: 1rem;
-    position:fixed;
     left:0px;
     bottom:0px;
     height:30px;
@@ -120,19 +126,37 @@ footer{
     justify-content: space-between;
 }
 
+#imagen-usuario{
+    object-fit: contain;
+}
+
 #servicios{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(85, 83, 83);
     height: 650px;
-    padding: 1.5rem;
+    width: 20%;
     color: white;
+    margin: auto;
 }
 
 #servicios h2{
-    margin-bottom: 1rem;
+    border-bottom: 2px solid grey;
+    padding-top: 1rem;
+}
+#servicios a{
+    margin-top: 0.8rem;
+    color: white;
+    text-decoration: none;
 }
 
-#servicios p{
-    margin-bottom: 0.8rem;
+#servicios h2 , a{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#servicios a:hover{
+    background-color: rgb(109, 108, 108);
 }
 
 #icono{
@@ -181,3 +205,52 @@ footer{
     width: 100%;
     height: 70%;
 }
+
+
+/**
+  .menu a {
+    position: relative;
+    display: block;
+    padding: 5px;
+  }
+  
+  #servicios a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #servicios a:hover::before {
+    transform: scaleX(1);
+  }
+  **/
+  
+  /* ANIMATIONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  .menu[data-animation="to-left"] a::before {
+    transform-origin: right;
+  }
+  
+  .menu[data-animation="center"] a::before {
+    transform-origin: center;
+  }
+  
+  .menu[data-animation="bonus"] a::before {
+    transform-origin: right;
+  }
+  
+  .menu[data-animation="bonus"] a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+  }
+
+  */
