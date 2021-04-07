@@ -96,6 +96,7 @@ main{
     text-decoration: none;
     color: black;
     margin-bottom: 2rem;
+    width: auto;
 }
 
 #carta h3{
@@ -139,20 +140,21 @@ footer{
     color: white;
     margin: auto;
 }
-
+#linea{
+    color: grey;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 0.2rem;
+}
 #servicios h2{
-    border-bottom: 2px solid grey;
     padding-top: 1rem;
+    padding-left: 20px;    
 }
 #servicios a{
-    margin-top: 0.8rem;
     color: white;
     text-decoration: none;
-}
-
-#servicios h2 , a{
-    width: 70%;
-    margin: 0 auto;
+    padding: 0.5rem 0 0.5rem 20px;
+    margin-top: 0.5rem;
 }
 
 #servicios a:hover{
